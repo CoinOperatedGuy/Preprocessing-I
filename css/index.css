@@ -1,1 +1,262 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+.bg-color {
+  background: darkgrey;
+}
+.font-color {
+  color: #3D59AB;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFF0;
+  font-family: 'Bitter', serif;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.container .nav-container {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 10px;
+  margin: 10px;
+}
+.container .nav-container .nav-item a {
+  text-decoration: none;
+  color: #00CED1;
+  background: lightgrey;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 50px;
+}
+.container .main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid green;
+}
+.container .main .header {
+  margin-top: 40px;
+  background: tan;
+  width: 700px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 25px;
+}
+.container .main .header h1 {
+  font-size: 50px;
+}
+.container .main .header p {
+  font-size: 20px;
+  text-align: center;
+}
+.container .main .header img {
+  border-radius: 50px;
+}
+.container .main .content {
+  background: darkgrey;
+  width: 750px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  border-radius: 25px;
+}
+.container .main .content .about {
+  width: 50%;
+  border: 1px solid orange;
+  border-radius: 25px;
+  margin: 5px;
+}
+.container .main .content .about h2 {
+  font-size: 1.5em;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+.container .main .content .about p {
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+.container .main .work {
+  background: darkgrey;
+  width: 750px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  color: #3D59AB;
+}
+.container .main .work h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 5px;
+  margin: 10px;
+}
+.container .main .work .work-notes {
+  margin: 10px;
+  border: 1px double #3D59AB;
+  display: flex;
+  flex-direction: column;
+}
+.container .main .work .work-notes h3 {
+  font-size: 25px;
+  padding: 5px;
+}
+.container .main .work .work-notes p {
+  font-size: 15px;
+  margin: 5px;
+  align-items: flex-end;
+}
+.container .main .bottom {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  border: 2px double black;
+}
+.container .main .bottom .info {
+  font-size: 15px;
+}
+.container .main .bottom .info h3,
+.container .main .bottom .info p {
+  padding: 5px;
+  margin: 5px;
+}
+.container .main .copyright {
+  text-align: center;
+}
