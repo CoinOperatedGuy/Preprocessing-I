@@ -144,7 +144,6 @@ table {
   font-family: 'Bitter', serif;
   max-width: 800px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 .container .nav-container {
   font-size: 20px;
@@ -166,7 +165,6 @@ table {
 .container .main {
   display: flex;
   flex-direction: column;
-  border: 1px solid green;
 }
 .container .main .header {
   margin-top: 40px;
@@ -175,16 +173,21 @@ table {
   margin: 10px;
   padding: 10px;
   border-radius: 25px;
+  font-family: 'Rubik', sans-serif;
+  margin-left: 25px;
 }
 .container .main .header h1 {
   font-size: 50px;
+  text-align: center;
 }
 .container .main .header p {
   font-size: 20px;
   text-align: center;
+  padding: 5px;
 }
 .container .main .header img {
   border-radius: 50px;
+  margin: 5px;
 }
 .container .main .content {
   background: darkgrey;
@@ -221,6 +224,7 @@ table {
   display: flex;
   flex-flow: column nowrap;
   color: #3D59AB;
+  border-radius: 25px;
 }
 .container .main .work h2 {
   text-align: center;
@@ -248,6 +252,9 @@ table {
   margin: 10px;
   display: flex;
   border: 2px double black;
+  background-color: floralwhite;
+  width: 750px;
+  border-radius: 25px;
 }
 .container .main .bottom .info {
   font-size: 15px;
@@ -259,4 +266,8 @@ table {
 }
 .container .main .copyright {
   text-align: center;
+}
+.container .main .copyright p {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 5px;
 }
