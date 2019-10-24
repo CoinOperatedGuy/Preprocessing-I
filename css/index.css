@@ -145,7 +145,13 @@ table {
   max-width: 800px;
   margin: 0 auto;
 }
-.container .nav-container {
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.container header .nav-container {
   font-size: 20px;
   text-align: center;
   display: flex;
@@ -154,13 +160,27 @@ table {
   padding: 10px;
   margin: 10px;
 }
-.container .nav-container .nav-item a {
+@media (max-width: 500px) {
+  .container header .nav-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+.container header .nav-container .nav-item a {
   text-decoration: none;
   color: #00CED1;
   background: lightgrey;
   padding: 5px;
   margin: 5px;
   border-radius: 50px;
+}
+@media (max-width: 500px) {
+  .container header .nav-container .nav-item a {
+    flex-direction: column;
+  }
 }
 .container .main {
   display: flex;
@@ -169,6 +189,7 @@ table {
 .container .main .header {
   margin-top: 40px;
   background: tan;
+  color: #3D59AB;
   width: 700px;
   margin: 10px;
   padding: 10px;
@@ -176,9 +197,19 @@ table {
   font-family: 'Rubik', sans-serif;
   margin-left: 25px;
 }
+@media (max-width: 500px) {
+  .container .main .header {
+    width: 400px;
+  }
+}
 .container .main .header h1 {
   font-size: 50px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .container .main .header h1 {
+    font-size: 40px;
+  }
 }
 .container .main .header p {
   font-size: 20px;
@@ -197,6 +228,11 @@ table {
   display: flex;
   flex-flow: row nowrap;
   border-radius: 25px;
+}
+@media (max-width: 500px) {
+  .container .main .content {
+    width: 475px;
+  }
 }
 .container .main .content .about {
   width: 50%;
@@ -232,6 +268,11 @@ table {
   padding: 5px;
   margin: 10px;
 }
+@media (max-width: 500px) {
+  .container .main .work {
+    width: 475px;
+  }
+}
 .container .main .work .work-notes {
   margin: 10px;
   border: 1px double #3D59AB;
@@ -264,10 +305,20 @@ table {
   padding: 5px;
   margin: 5px;
 }
+@media (max-width: 500px) {
+  .container .main .bottom {
+    width: 475px;
+  }
+}
 .container .main .copyright {
   text-align: center;
 }
 .container .main .copyright p {
   font-family: 'Roboto Condensed', sans-serif;
   padding: 5px;
+}
+@media (max-width: 500px) {
+  .container .main .copyright {
+    width: 475px;
+  }
 }

@@ -49,12 +49,16 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+@font-Color: #3D59AB;
+
+@mobile: ~"(max-width: 500px)";
+
 .bg-color {
 	background: darkgrey;
 }
 
 .font-color {
-	color: #3D59AB;
+	color: @font-Color;
 }
 
 * {
@@ -70,10 +74,13 @@ table {
 	font-family: 'Bitter', serif;
 	max-width: 800px;
 	margin: 0 auto;
-	// border: 1px solid black;
-	// justify-content: center;
+
+	@media @mobile{
+		width: 100%;
+		margin: 0 auto;
+	}
 	
-	.nav-container {
+	header .nav-container {
 		font-size: 20px;
 		text-align: center;
 		display: flex;
@@ -81,11 +88,14 @@ table {
 		justify-content: flex-end;
 		padding: 10px;
 		margin: 10px;
-		// nav-bar
 
-		// .nav-item {
-		// 	position: fixed;
-		// }
+		@media @mobile{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			align-content: center;
+		}
 
 		.nav-item a {
 			text-decoration: none;
@@ -94,8 +104,14 @@ table {
 			padding: 5px;
 			margin: 5px;
 			border-radius: 50px;
-			// position: fixed;
-			// nav-item
+
+			@media @mobile {
+				flex-direction: column;
+				// justify-content: center;
+				// align-items: stretch;
+				// align-content: center;
+				// margin: 50px 300px;
+			}
 		}
 	}
 
@@ -107,6 +123,7 @@ table {
 		.header {
 			margin-top: 40px; 
 			background: tan;
+			.font-color();
 			width: 700px;
 			margin: 10px;
 			padding: 10px;
@@ -114,9 +131,17 @@ table {
 			font-family: 'Rubik', sans-serif;
 			margin-left: 25px;
 
+			@media @mobile{
+				width: 400px;
+			}
+
 			h1 {
 				font-size: 50px;
 				text-align: center;
+
+				@media @mobile{
+					font-size: 40px;
+				}
 			}
 
 			p {
@@ -139,6 +164,10 @@ table {
 			display: flex;
 			flex-flow: row nowrap;
 			border-radius: 25px;
+
+			@media @mobile{
+				width: 475px;
+			}
 
 			.about {
 				width: 50%;
@@ -179,6 +208,10 @@ table {
 				margin: 10px;
 			}
 
+			@media @mobile{
+				width: 475px;
+			}
+
 			.work-notes {
 				margin: 10px;
 				border: 1px double #3D59AB;
@@ -215,6 +248,10 @@ table {
 					margin: 5px;
 				}
 			}
+
+			@media @mobile{
+				width: 475px;
+			}
 		}
 
 		.copyright {
@@ -223,7 +260,11 @@ table {
 			p {
 				font-family: 'Roboto Condensed', sans-serif;
 				padding: 5px;
-			} 
+			}
+			
+			@media @mobile{
+				width: 475px;
+			}
 		}
 	}
 }
