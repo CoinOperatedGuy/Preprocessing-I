@@ -151,6 +151,18 @@ table {
     margin: 0 auto;
   }
 }
+.container header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .container header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+}
 .container header .nav-container {
   font-size: 20px;
   text-align: center;
@@ -163,10 +175,24 @@ table {
 @media (max-width: 500px) {
   .container header .nav-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
+  }
+}
+.container header .nav-container .nav-item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .container header .nav-container .nav-item {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 .container header .nav-container .nav-item a {
@@ -179,7 +205,14 @@ table {
 }
 @media (max-width: 500px) {
   .container header .nav-container .nav-item a {
-    flex-direction: column;
+    display: flex;
+    font-size: 20px;
+    width: 90%;
+    padding: 5px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 .container .main {
@@ -247,10 +280,15 @@ table {
   text-align: center;
 }
 .container .main .content .about p {
-  padding: 5px;
+  padding: 15px;
   margin: 5px;
   text-align: center;
   font-size: 15px;
+}
+@media (max-width: 500px) {
+  .container .main .content .about .list {
+    padding-top: 90px;
+  }
 }
 .container .main .work {
   background: darkgrey;

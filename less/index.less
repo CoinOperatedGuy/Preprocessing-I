@@ -80,37 +80,69 @@ table {
 		margin: 0 auto;
 	}
 	
-	header .nav-container {
-		font-size: 20px;
-		text-align: center;
+	header {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
-		padding: 10px;
-		margin: 10px;
 
-		@media @mobile{
+		@media @mobile {
 			display: flex;
-			flex-direction: column;
+			flex-flow: row nowrap;
 			justify-content: center;
-			align-items: center;
-			align-content: center;
 		}
 
-		.nav-item a {
-			text-decoration: none;
-			color: #00CED1;
-			background: lightgrey;
-			padding: 5px;
-			margin: 5px;
-			border-radius: 50px;
-
+		.nav-container {
+			font-size: 20px;
+			text-align: center;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			padding: 10px;
+			margin: 10px;
+	
 			@media @mobile {
-				flex-direction: column;
-				// justify-content: center;
-				// align-items: stretch;
-				// align-content: center;
-				// margin: 50px 300px;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
+				align-content: center;
+			}
+	
+			.nav-item {
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: flex-end;
+
+				@media @mobile {
+					display: flex;
+					flex-flow: row nowrap;
+					justify-content: space-around;
+					align-items: center;
+				}
+			
+				a {
+					text-decoration: none;
+					color: #00CED1;
+					background: lightgrey;
+					padding: 5px;
+					margin: 5px;
+					border-radius: 50px;
+	
+					@media @mobile {
+						display: flex;
+						font-size: 20px;
+						width: 90%;
+						padding: 5px;
+						margin: 0;
+						flex-direction: row;
+						flex-wrap: wrap;
+						justify-content: center;
+						// align-items: stretch;
+						// align-content: space-between;
+						// margin: 50px 300px;
+					}
+				}
 			}
 		}
 	}
@@ -183,10 +215,16 @@ table {
 				}
 
 				p {
-					padding: 5px;
+					padding: 15px;
 					margin: 5px;
 					text-align: center;
 					font-size: 15px;
+				}
+
+				.list {
+					@media @mobile {
+						padding-top: 90px;
+					}
 				}
 			}
 		}
@@ -268,4 +306,3 @@ table {
 		}
 	}
 }
-
